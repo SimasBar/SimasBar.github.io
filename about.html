@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <link href="./assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./contact.html">Contact</a>
+  </div> 
+  
+</head>
+<style>
+  body {
+    background-image: url('./media/bg.jpeg');
+    background-attachment: fixed;
+  }
+  </style>
+<body>    
+  <div class="container">
+    <div class="typewriter">
+      <h1>Apie mane</h1>
+       </div>
+      </div>
+  <div class="container">
+    <main>
+        <div class="item">        
+                <p>Sveiki, aš esu Simas. <br>
+                  Šiuo metu studijuoju elektros energetikos inžinerija @ VILNIUS TECH.</p>
+                  </div>
+
+    <div class="item">
+      <h2>Mano Vizija</h2>      
+    <p>Mano kūrybinis kelias prasideda nuo jūsų idėjų.<br>
+       Laikausi KISS (Keep it simple, stupid) filosofijos</p>
+  </div>
+  
+
+
+    <div class="item">
+      <h2>Kodėl Aš?</h2>
+
+      <p>Esu orientuotas į klientą ir nebijau iššūkių.</p>
+       </div>
+       
+
+       <div class="item"><h2>Keli mano darbai</h2></div>
+      
+       <input type="checkbox" id="toggleFullscreen"/>
+    
+         <div id="gallery"><!-- gallery start -->
+           <div id="gallery-container"><!-- gallery-containet start -->
+             <!-- The checkbox visual. The for prop links it to the inout so when you click on this it check/uncheck the checkbox -->
+             <label id="toggleFullscreenVisual" for="toggleFullscreen"></label>
+             
+             <!-- gallery-content start -->
+             <div id="gallery-content">
+               
+               <div id="pic_1" class="gallery__item">
+                 <a href="#" class="click-zone click-zone-prev">
+                   <div class="arrow arrow-disabled arrow-prev"><span>&lt;</span></div>
+                 </a> 
+                 <a href="#pic_2" class="click-zone click-zone-next">
+                   <div class="arrow arrow-next"><span>&gt;</span></div>
+                 </a>
+                 <img src="https://picsum.photos/id/10/960/540" alt="TODO">
+               </div>
+               
+               <div id="pic_2" class="gallery__item">
+                 <a href="#pic_1" class="click-zone click-zone-prev">
+                   <div class="arrow arrow-prev"><span>&lt;</span></div>
+                 </a> 
+                 <a href="#pic_3" class="click-zone click-zone-next">
+                   <div class="arrow arrow-next"><span>&gt;</span></div>
+                 </a>
+                 <img src="https://picsum.photos/id/11/960/540" alt="TODO">
+               </div>
+               
+               <div id="pic_3" class="gallery__item">
+                 <a href="#pic_2" class="click-zone click-zone-prev">
+                   <div class="arrow arrow-prev"><span>&lt;</span></div>
+                 </a> 
+                 <a href="#pic_4" class="click-zone click-zone-next">
+                   <div class="arrow arrow-next"><span>&gt;</span></div>
+                 </a>
+                 <img src="https://picsum.photos/id/12/960/540" alt="TODO">
+               </div>
+               
+               <div id="pic_4" class="gallery__item">
+                 <a href="#pic_3" class="click-zone click-zone-prev">
+                   <div class="arrow arrow-prev"><span>&lt;</span></div>
+                 </a> 
+                 <a href="#pic_5" class="click-zone click-zone-next">
+                   <div class="arrow arrow-next"><span>&gt;</span></div>
+                 </a>
+                 <img src="https://picsum.photos/id/13/960/540" alt="TODO">
+               </div>
+               
+               <div id="pic_5" class="gallery__item">
+                 <a href="#pic_4" class="click-zone click-zone-prev">
+                   <div class="arrow arrow-prev"><span>&lt;</span></div>
+                 </a> 
+                 <a href="#" class="click-zone click-zone-next">
+                   <div class="arrow arrow-disabled arrow-next"><span>&gt;</span></div>
+                 </a>
+                 <img src="https://picsum.photos/id/14/960/540" alt="TODO">
+               </div>
+               
+             </div><!-- gallery-content end -->
+             
+             <!-- gallery-controls start -->
+             <div id="gallery-controls">
+               <a href="#pic_1" class="controls__dot">
+                 <span class="hidden">pic 1</span>
+               </a>
+               <a href="#pic_2" class="controls__dot">
+                 <span class="hidden">pic 2</span>
+               </a>
+               <a href="#pic_3" class="controls__dot">
+                 <span class="hidden">pic 3</span>
+               </a>
+               <a href="#pic_4" class="controls__dot">
+                 <span class="hidden">pic 4</span>
+               </a>
+               <a href="#pic_5" class="controls__dot">
+                 <span class="hidden">pic 5</span>
+               </a>
+             </div><!-- gallery-controls end -->
+           </div><!-- gallery-containet end -->
+         </div><!-- gallery end -->
+      
+        </main>
+<footer> 
+    <div class="footer">
+      <p>Simas Bartušis, EEf-22</p>
+      <a href="https://facebook.com" class="fa fa-facebook"></a>
+      <a href="https://twitter.com" class="fa fa-twitter"></a>
+      <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+    </div>
+  </footer> 
+</div>
+</body>
+
+</html>

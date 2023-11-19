@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <meta charset="UTF-8">
+    
+<head>
+
+
+</head>
+    
+<title>
+
+    
+</title>
+
+        
+<body>
+
+<link>
+            
+</body>
+
+</html>
+
+
+<body>
+    <!-- This input must be outside the wrapper to we can target the carousel from it using css ~ -->
+    <!-- This one is invisible it can be controller from anywhere using label -->
+    <input type="checkbox" id="toggleFullscreen"/>
+    
+    <main>
+      <div id="gallery"><!-- gallery start -->
+        <div id="gallery-container"><!-- gallery-containet start -->
+          <!-- The checkbox visual. The for prop links it to the inout so when you click on this it check/uncheck the checkbox -->
+          <label id="toggleFullscreenVisual" for="toggleFullscreen"></label>
+          
+          <!-- gallery-content start -->
+          <div id="gallery-content">
+            
+            <div id="pic_1" class="gallery__item">
+              <a href="#" class="click-zone click-zone-prev">
+                <div class="arrow arrow-disabled arrow-prev"><span>&lt;</span></div>
+              </a> 
+              <a href="#pic_2" class="click-zone click-zone-next">
+                <div class="arrow arrow-next"><span>&gt;</span></div>
+              </a>
+              <img src="https://picsum.photos/id/10/960/540" alt="TODO">
+            </div>
+            
+            <div id="pic_2" class="gallery__item">
+              <a href="#pic_1" class="click-zone click-zone-prev">
+                <div class="arrow arrow-prev"><span>&lt;</span></div>
+              </a> 
+              <a href="#pic_3" class="click-zone click-zone-next">
+                <div class="arrow arrow-next"><span>&gt;</span></div>
+              </a>
+              <img src="https://picsum.photos/id/11/960/540" alt="TODO">
+            </div>
+            
+            <div id="pic_3" class="gallery__item">
+              <a href="#pic_2" class="click-zone click-zone-prev">
+                <div class="arrow arrow-prev"><span>&lt;</span></div>
+              </a> 
+              <a href="#pic_4" class="click-zone click-zone-next">
+                <div class="arrow arrow-next"><span>&gt;</span></div>
+              </a>
+              <img src="https://picsum.photos/id/12/960/540" alt="TODO">
+            </div>
+            
+            <div id="pic_4" class="gallery__item">
+              <a href="#pic_3" class="click-zone click-zone-prev">
+                <div class="arrow arrow-prev"><span>&lt;</span></div>
+              </a> 
+              <a href="#pic_5" class="click-zone click-zone-next">
+                <div class="arrow arrow-next"><span>&gt;</span></div>
+              </a>
+              <img src="https://picsum.photos/id/13/960/540" alt="TODO">
+            </div>
+            
+            <div id="pic_5" class="gallery__item">
+              <a href="#pic_4" class="click-zone click-zone-prev">
+                <div class="arrow arrow-prev"><span>&lt;</span></div>
+              </a> 
+              <a href="#" class="click-zone click-zone-next">
+                <div class="arrow arrow-disabled arrow-next"><span>&gt;</span></div>
+              </a>
+              <img src="https://picsum.photos/id/14/960/540" alt="TODO">
+            </div>
+            
+          </div><!-- gallery-content end -->
+          
+          <!-- gallery-controls start -->
+          <div id="gallery-controls">
+            <a href="#pic_1" class="controls__dot">
+              <span class="hidden">pic 1</span>
+            </a>
+            <a href="#pic_2" class="controls__dot">
+              <span class="hidden">pic 2</span>
+            </a>
+            <a href="#pic_3" class="controls__dot">
+              <span class="hidden">pic 3</span>
+            </a>
+            <a href="#pic_4" class="controls__dot">
+              <span class="hidden">pic 4</span>
+            </a>
+            <a href="#pic_5" class="controls__dot">
+              <span class="hidden">pic 5</span>
+            </a>
+          </div><!-- gallery-controls end -->
+        </div><!-- gallery-containet end -->
+      </div><!-- gallery end -->
+      
+      <div id="content"><!-- content start -->
+        <h1>Js free responsive image gallery</h1>
+        <div>
+          <p>It uses css scroll snap (kind of widly supported) to make a really powerful crousel. If you ever tried to find the perfect carousel: 
+          <ul>
+            <li>can be used with mouse/touchscreen/trackpads</li>
+            <li>can run smoothly on low en devices (because it uses only browser native behaviours)</li>
+            <li>can have the basic features : swipe, fullscreen, zoom&pan</li>
+          </ul>
+          You must have found that it is not something simple. It exists tones of library that just covers some of the usecases and they are often heavy js.
+          </p>
+          <p>
+            I made this js free, for the beauty of it, but it can be event better if you use just a bit of javascript to improve some features such as the navigation buttons and detect the current slide.
+          </p>
+          <p>
+            It is not the perfect solution though... It has some caveates:
+            <ul>
+              <li>It uses url anchor to slide to one slide with controls (so it affect browser history, you might not want that) but it can be fixed my using javascript to navigation.</li>
+              <li>The full screen does not push any route to broser history, so UX is bad, especially on mobile, cause users will want to press return to disbale it. It ban also be fixed with a bit of javascript.</li>
+              <li>The zoom and pan does not act on the image only but also on the controls. I thought of embeded it in iframe so it fix that, but unfortunately, iframe doesn't scroll-snap well until it received a click action. Too bad...</li>
+            </ul>
+          </p>
+        </div>
+      </div><!-- content end -->
+    </main>
+  </body>     
