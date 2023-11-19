@@ -7,21 +7,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
-  <div class="topnav">
+  <div class="topnav noprint">
     <a class="active" href="./index.html">Home</a>
     <a href="./about.html">About</a>
     <a href="./resume.html">Resume</a>
     <a href="./contact.html">Contact</a>
   </div> 
+
+
 </head>
 <style>
   body {
     background-image: url('./media/bg.jpeg');
     background-attachment: fixed;
   }
+  @media print {
+           .noprint {
+              visibility: hidden;
+           }
+        }
   </style>
+
 <body>
-  <div class="container">
+ 
+
+  <div class="container noprint">
       <div class="typewriter">
         <h1>Resume</h1>
          </div>
@@ -76,12 +86,16 @@
             <ul>Office prog. įranga</ul>
          </li>
 
-
+         <div><button onClick="print()">Print this page
+        </button></div>
         </div>
+
+        
         
            
         
       </div>
+      
            
        
             <!-- <iframe src="https://www.youtube.com/embed/fz9EZEMJi6M?si=aBIe41AgAUi0pRDJ"></iframe> -->
