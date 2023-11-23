@@ -52,7 +52,7 @@
  }
  .contgrid2{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 0.5fr); /* 2 columns */
     grid-template-rows: repeat(6, 1fr);    /* 6 rows */
 gap:10px;
 
