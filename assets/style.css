@@ -88,6 +88,7 @@ gap:10px;
   margin: 10px;
   gap: 20px;
   flex-flow: row;
+  flex-wrap: wrap;
  
   
  }
@@ -105,7 +106,7 @@ gap:10px;
  .rowitem > img{
 
   max-width: 55%;
-  max-height: auto;
+  height: auto;
  }
 
    .container{
