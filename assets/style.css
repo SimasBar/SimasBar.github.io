@@ -1,6 +1,6 @@
 body {
  
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: Arial, Helvetica, sans-serif;
   }
   .centered {
     position: fixed; /* or absolute */
@@ -79,18 +79,45 @@ gap:10px;
     color:white;
   
  }
+
+ .row{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 10px;
+  gap: 20px;
+  flex-flow: row;
+ 
+  
+ }
+ .rowitem{
+   border-radius: 25px;
+   padding: 10px;
+   text-align: center;
+   max-width: 550px;
+   max-height: 550px;
+   margin: 10px;
+   color: white;
+   background: rgba(168, 168, 168, 0.2);
+ 
+ }
+ .rowitem > img{
+
+  max-width: 55%;
+  max-height: auto;
+ }
+
    .container{
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-  
     margin: 10px;
     gap: 15px;
     flex-flow: column;
-    
-    
 }
+
   .item{
     padding:10px;
     font-size: 14pt;
@@ -445,7 +472,7 @@ gap:10px;
   main{
     padding: 0px;
     margin: 0px;
-    max-width: 900px;
+    max-width: 90%;
     margin: auto;
   }
   .hidden{
