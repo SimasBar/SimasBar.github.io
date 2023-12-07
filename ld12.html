@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <style>
+    body {
+      background-image: url('./media/bg.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+
+<head>
+  
+  <title>MathML and SVG</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
+  <link href="./assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <style> 
+
+    form {
+    max-width: 400px;
+    margin: auto;
+}
+
+    label {
+    display: block;
+    margin-top: 10px;
+}
+ </style>
+ <script type="text/javascript" async
+
+ src="./assets/formos.js">
+
+ </script>
+</head>
+
+
+
+
+
+<body>
+
+  <div class="topnav">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./ld11.html">LD11</a>
+    <a class ="active" href="./ld12.html">LD12</a>
+  </div> 
+  
+  <main>
+<div class="container">
+    <div class="item">
+        <body>
+
+            <form id="userDataForm">
+                <label for="firstName">Vardas:</label>
+                <input type="text" id="firstName" required>
+        
+                <label for="lastName">Pavardė:</label>
+                <input type="text" id="lastName" required>
+        
+                <label for="number1">Skaičius 1 (romėniškai nuo 1 iki 10):</label>
+                <input type="text" id="number1" pattern="[1-9]|10" required>
+        
+                <label for="number2">Skaičius 2 (romėniškai nuo 1 iki 10):</label>
+                <input type="text" id="number2" pattern="[1-9]|10" required><br><br>
+        
+                <button type="button" onclick="processData()">Išsaugoti duomenis</button>
+            </form>
+    </div>
+    <div class="item">
+        <form id="diameterForm">
+            <label for="diameter1">Diametras 1:</label>
+            <input type="number" id="diameter1" min="0" required>
+    
+            <label for="diameter2">Diametras 2:</label>
+            <input type="number" id="diameter2" min="0" required><br><br>
+    
+            <button type="button" onclick="calculateSum()">Skaičiuoti</button>
+        </form>
+    
+        <div id="result"></div>
+    </div>
+</div>
+    </main>
+
+
+
+<footer> 
+    <div class="footer">
+      <p>Simas Bartušis, EEf-22</p>
+      <a href="https://facebook.com" class="fa fa-facebook"></a>
+      <a href="https://twitter.com" class="fa fa-twitter"></a>
+      <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+    </div>
+ </footer> 
+</div>
+ <!-- <object data="snippet-example-1.html"></object> --> 
+</body>
+
+</html>
